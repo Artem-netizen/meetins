@@ -1,0 +1,64 @@
+.calendar{
+    position: relative;
+    &__list{
+        border-top: 1px solid $gray_3;
+        border-bottom: 1px solid $gray_3;
+        &-item{
+            width: 97px;
+            height: 97px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 1px solid $gray_3;
+        }
+    }
+    &__data{
+        font-weight: 700 !important;
+    }
+}
+.calendar__list-item.active__day p{
+    color: $blue;
+}
+// arrows
+.mini__slider-arrows{
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid $gray_3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    &:focus{
+        outline: 1px solid $blue;
+    }
+}
+.left__arrow{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.right__arrow{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}

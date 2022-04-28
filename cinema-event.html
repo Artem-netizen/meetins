@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск людей</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block__style">
+            <div class="top__content top__title flex justify-content">
+                <ul class="top__title-list flex">
+                    <li>
+                        <h3 class="top__title-name main__title">
+                            События
+                        </h3>
+                    </li>
+                    <li>
+                        <div class="arrow__right">
+                            <img src="./img/photo/arrow-right.svg" alt="arrow right">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Кино
+                        </a>
+                    </li>
+                </ul>
+                <div class="search">
+                    <button class="top__btn search__icon" type="button">
+                        <img src="./img/events/icons/search.svg" alt="Искать">
+                    </button>
+                    <div class="search__label">
+                        <input class="search__input small__text" type="text" id="search-id" placeholder="Поиск событий...">
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                <ul class="calendar__list flex justify-content">
+                    <li class="calendar__list-item active__day">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                    <li class="calendar__list-item">
+                        <p class="calendar__text text">
+                            Вт
+                        </p>
+                        <p class="calendar__text small__text">
+                            Фев.
+                        </p>
+                        <p class="calendar__data text">
+                            16
+                        </p>
+                    </li>
+                </ul>
+                <div class="slider__arrows">
+                    <button class="mini__slider-arrows left__arrow" type="button">
+                        <img src="./img/events/icons/arrow-left.svg" alt="Листать назад">
+                    </button>
+                    <button class="mini__slider-arrows right__arrow" type="button">
+                        <img src="./img/photo/arrow-right.svg" alt="Листать вперед">
+                    </button>
+                </div>
+            </div>
+            <div class="top__content">
+                <ul class="settings flex justify-content">
+                    <li class="article__settings article-events">
+                        <h5 class="article__title text">
+                            Кинотеатры
+                        </h5>
+                        <div class="events__settings">
+                            <div class="input__inner icon-down">
+                                <input class="input small__text" id="inputNameCinema" type="text" placeholder="Все">
+                                <div class="search__options">
+                                    <ul class="search__options-list">
+                                        <li class="search search-box" style="border: 1.5px solid #D4E8FC; width: 100%;">
+                                            <button class="top__btn search__icon" type="button">
+                                                <img src="./img/events/icons/search.svg" alt="Искать">
+                                            </button>
+                                            <div class="search__label">
+                                                <input class="search__input small__text" type="text" name="искать кинотеатры" id="searchSpecifically" placeholder="найти кинотеатр">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Театр драмы им. Достоевского
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Театр для детей и молодежи Малый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Фольклорный театр Кудесы
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Фольклорный театр Кудесы
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Фольклорный театр Кудесы
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Дом народного творчества
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text" href="#">
+                                                Дом народного творчества
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="article__settings article-events">
+                        <h5 class="article__title text">
+                            Жанр
+                        </h5>
+                        <div class="events__settings">
+                            <div class="input__inner icon-down">
+                                <input class="input small__text" id="inputGenre" type="text" placeholder="Любой">
+                            </div>
+                        </div>
+                        <!-- Кол-во игроков -->
+                        <h5 class="article__title text">
+                            Кол-во игроков
+                        </h5>
+                        <div class="events__settings">
+                            <div class="input__inner icon-down number__players">
+                                <input class="input small__text" id="inputNumberText" type="number" placeholder="Любое">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="article__settings">
+                        <h5 class="article__title text">
+                            Пол
+                        </h5>
+                        <div class="checkbox__inner">
+                            <div class="checkbox search-checkbox">
+                                <input class="checkbox__input" checked type="checkbox" id="checkbox_8">
+                                <label class="checkbox__label text" for="checkbox_8">
+                                    Популярное
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="checkbox" id="checkbox_9">
+                                <label class="checkbox__label text" for="checkbox_9">
+                                    Скоро в кино
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="checkbox" id="checkbox_10">
+                                <label class="checkbox__label text" for="checkbox_10">
+                                    Премьера
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__style">
+            <div class="main__content">
+                <ul class="grid grid__events">
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.00039 10.7898C5.42474 10.7898 5.8317 10.6213 6.13176 10.3212C6.43182 10.0212 6.60039 9.61419 6.60039 9.18984C6.60039 8.7655 6.43182 8.35853 6.13176 8.05847C5.8317 7.75842 5.42474 7.58984 5.00039 7.58984C4.57604 7.58984 4.16908 7.75842 3.86902 8.05847C3.56896 8.35853 3.40039 8.7655 3.40039 9.18984C3.40039 9.61419 3.56896 10.0212 3.86902 10.3212C4.16908 10.6213 4.57604 10.7898 5.00039 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.0004 10.7898C13.4247 10.7898 13.8317 10.6213 14.1318 10.3212C14.4318 10.0212 14.6004 9.61419 14.6004 9.18984C14.6004 8.7655 14.4318 8.35853 14.1318 8.05847C13.8317 7.75842 13.4247 7.58984 13.0004 7.58984C12.576 7.58984 12.1691 7.75842 11.869 8.05847C11.569 8.35853 11.4004 8.7655 11.4004 9.18984C11.4004 9.61419 11.569 10.0212 11.869 10.3212C12.1691 10.6213 12.576 10.7898 13.0004 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 6.78984C9.42474 6.78984 9.8317 6.62127 10.1318 6.32121C10.4318 6.02116 10.6004 5.61419 10.6004 5.18984C10.6004 4.7655 10.4318 4.35853 10.1318 4.05847C9.8317 3.75841 9.42474 3.58984 9.00039 3.58984C8.57604 3.58984 8.16908 3.75841 7.86902 4.05847C7.56896 4.35853 7.40039 4.7655 7.40039 5.18984C7.40039 5.61419 7.56896 6.02116 7.86902 6.32121C8.16908 6.62127 8.57604 6.78984 9.00039 6.78984Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 14.7898C9.42474 14.7898 9.8317 14.6213 10.1318 14.3212C10.4318 14.0212 10.6004 13.6142 10.6004 13.1898C10.6004 12.7655 10.4318 12.3585 10.1318 12.0585C9.8317 11.7584 9.42474 11.5898 9.00039 11.5898C8.57604 11.5898 8.16908 11.7584 7.86902 12.0585C7.56896 12.3585 7.40039 12.7655 7.40039 13.1898C7.40039 13.6142 7.56896 14.0212 7.86902 14.3212C8.16908 14.6213 8.57604 14.7898 9.00039 14.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 9.18945V17.1895M1 9.18945C1 13.6079 4.5816 17.1895 9 17.1895C13.4184 17.1895 17 13.6079 17 9.18945C17 4.77105 13.4184 1.18945 9 1.18945C4.5816 1.18945 1 4.77105 1 9.18945Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                231456
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название Название нвазние нвазние звание наыав...
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3.56591V12.6189C15 13.1325 14.7744 13.6202 14.383 13.9527C13.9916 14.2852 13.4738 14.429 12.967 14.3459L10.722 13.9789L5.278 15.3789L2.468 14.9189C1.6216 14.7807 1.00006 14.0495 1 13.1919V4.13891C0.99999 3.62532 1.22559 3.13765 1.61702 2.80514C2.00844 2.47263 2.52617 2.32885 3.033 2.41191L5.278 2.77891L10.722 1.37891L13.532 1.83891C14.3784 1.9771 14.9999 2.7083 15 3.56591Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.02734 2.7793C6.02734 2.36508 5.69156 2.0293 5.27734 2.0293C4.86313 2.0293 4.52734 2.36508 4.52734 2.7793H6.02734ZM4.52734 15.3793C4.52734 15.7935 4.86313 16.1293 5.27734 16.1293C5.69156 16.1293 6.02734 15.7935 6.02734 15.3793H4.52734ZM11.4707 1.37891C11.4707 0.964693 11.1349 0.628906 10.7207 0.628906C10.3065 0.628906 9.9707 0.964693 9.9707 1.37891H11.4707ZM9.9707 13.9789C9.9707 14.3931 10.3065 14.7289 10.7207 14.7289C11.1349 14.7289 11.4707 14.3931 11.4707 13.9789H9.9707ZM4.52734 2.7793V15.3793H6.02734V2.7793H4.52734ZM9.9707 1.37891V13.9789H11.4707V1.37891H9.9707Z" fill="#fff"/>
+                                        </svg> 
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1360_11294)">
+                                                <path d="M13.4733 17.5608C14.4034 17.5608 15.1575 16.8282 15.1575 15.9245C15.1575 15.0207 14.4034 14.2881 13.4733 14.2881C12.5431 14.2881 11.7891 15.0207 11.7891 15.9245C11.7891 16.8282 12.5431 17.5608 13.4733 17.5608Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52601 4.46999C3.45617 4.46999 4.21022 3.73737 4.21022 2.83363C4.21022 1.92989 3.45617 1.19727 2.52601 1.19727C1.59584 1.19727 0.841797 1.92989 0.841797 2.83363C0.841797 3.73737 1.59584 4.46999 2.52601 4.46999Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52601 17.5608C3.45617 17.5608 4.21022 16.8282 4.21022 15.9245C4.21022 15.0207 3.45617 14.2881 2.52601 14.2881C1.59584 14.2881 0.841797 15.0207 0.841797 15.9245C0.841797 16.8282 1.59584 17.5608 2.52601 17.5608Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52637 4.46973V14.2879" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 3.65234H11.7895C12.2362 3.65234 12.6645 3.82475 12.9804 4.13162C13.2962 4.4385 13.4737 4.85472 13.4737 5.28871V14.2887" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5263 6.10636L8 3.65181L10.5263 1.19727" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1360_11294">
+                                                    <rect width="16" height="18" fill="white" transform="translate(0 0.378906)"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1360_11273)">
+                                                <path d="M1.23077 0.189453C1.23077 0.189453 0 0.189453 0 1.42022V7.76853C0 9.89776 0.435692 12.4971 4.30769 12.4971H4.92308V8.80484L1.84615 10.0356C1.84615 10.0356 1.84615 6.95868 4.92308 6.95868V5.11253C4.92308 4.24115 5.03015 3.48791 5.53846 2.92791C6.00738 2.41099 6.77538 1.37961 8.80739 2.34822L9.84615 3.02391V1.42022C9.84615 1.42022 9.84615 0.189453 8.61539 0.189453C7.744 0.189453 6.18092 1.42022 4.92308 1.42022C3.66523 1.42022 2.19938 0.189453 1.23077 0.189453ZM2.46154 2.65099C2.78796 2.65099 3.10101 2.78066 3.33182 3.01148C3.56264 3.24229 3.69231 3.55534 3.69231 3.88176C3.69231 4.20818 3.56264 4.52123 3.33182 4.75205C3.10101 4.98286 2.78796 5.11253 2.46154 5.11253C2.13512 5.11253 1.82207 4.98286 1.59125 4.75205C1.36044 4.52123 1.23077 4.20818 1.23077 3.88176C1.23077 3.55534 1.36044 3.24229 1.59125 3.01148C1.82207 2.78066 2.13512 2.65099 2.46154 2.65099ZM7.38462 3.88176C7.38462 3.88176 6.15385 3.88176 6.15385 5.11253V11.2664C6.15385 13.7279 7.38462 16.1895 11.0769 16.1895C14.7692 16.1895 16 13.7279 16 11.2664V5.11253C16 3.88176 14.7692 3.88176 14.7692 3.88176C13.8978 3.88176 12.3348 5.11253 11.0769 5.11253C9.81908 5.11253 8.35323 3.88176 7.38462 3.88176ZM8.61539 6.3433C8.9418 6.3433 9.25486 6.47297 9.48567 6.70378C9.71648 6.9346 9.84615 7.24765 9.84615 7.57407C9.84615 7.90049 9.71648 8.21354 9.48567 8.44435C9.25486 8.67517 8.9418 8.80484 8.61539 8.80484C8.28896 8.80484 7.97591 8.67517 7.7451 8.44435C7.51429 8.21354 7.38462 7.90049 7.38462 7.57407C7.38462 7.24765 7.51429 6.9346 7.7451 6.70378C7.97591 6.47297 8.28896 6.3433 8.61539 6.3433ZM13.5385 6.3433C13.8649 6.3433 14.1779 6.47297 14.4087 6.70378C14.6396 6.9346 14.7692 7.24765 14.7692 7.57407C14.7692 7.90049 14.6396 8.21354 14.4087 8.44435C14.1779 8.67517 13.8649 8.80484 13.5385 8.80484C13.212 8.80484 12.899 8.67517 12.6682 8.44435C12.4374 8.21354 12.3077 7.90049 12.3077 7.57407C12.3077 7.24765 12.4374 6.9346 12.6682 6.70378C12.899 6.47297 13.212 6.3433 13.5385 6.3433ZM8 11.2664H14.1538C14.1538 11.2664 14.1538 14.3433 11.0769 14.3433C8 14.3433 8 11.2664 8 11.2664Z" fill="#fff"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1360_11273">
+                                                    <rect width="16" height="16" fill="white" transform="translate(0 0.189453)"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg> 
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.00039 10.7898C5.42474 10.7898 5.8317 10.6213 6.13176 10.3212C6.43182 10.0212 6.60039 9.61419 6.60039 9.18984C6.60039 8.7655 6.43182 8.35853 6.13176 8.05847C5.8317 7.75842 5.42474 7.58984 5.00039 7.58984C4.57604 7.58984 4.16908 7.75842 3.86902 8.05847C3.56896 8.35853 3.40039 8.7655 3.40039 9.18984C3.40039 9.61419 3.56896 10.0212 3.86902 10.3212C4.16908 10.6213 4.57604 10.7898 5.00039 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.0004 10.7898C13.4247 10.7898 13.8317 10.6213 14.1318 10.3212C14.4318 10.0212 14.6004 9.61419 14.6004 9.18984C14.6004 8.7655 14.4318 8.35853 14.1318 8.05847C13.8317 7.75842 13.4247 7.58984 13.0004 7.58984C12.576 7.58984 12.1691 7.75842 11.869 8.05847C11.569 8.35853 11.4004 8.7655 11.4004 9.18984C11.4004 9.61419 11.569 10.0212 11.869 10.3212C12.1691 10.6213 12.576 10.7898 13.0004 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 6.78984C9.42474 6.78984 9.8317 6.62127 10.1318 6.32121C10.4318 6.02116 10.6004 5.61419 10.6004 5.18984C10.6004 4.7655 10.4318 4.35853 10.1318 4.05847C9.8317 3.75841 9.42474 3.58984 9.00039 3.58984C8.57604 3.58984 8.16908 3.75841 7.86902 4.05847C7.56896 4.35853 7.40039 4.7655 7.40039 5.18984C7.40039 5.61419 7.56896 6.02116 7.86902 6.32121C8.16908 6.62127 8.57604 6.78984 9.00039 6.78984Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 14.7898C9.42474 14.7898 9.8317 14.6213 10.1318 14.3212C10.4318 14.0212 10.6004 13.6142 10.6004 13.1898C10.6004 12.7655 10.4318 12.3585 10.1318 12.0585C9.8317 11.7584 9.42474 11.5898 9.00039 11.5898C8.57604 11.5898 8.16908 11.7584 7.86902 12.0585C7.56896 12.3585 7.40039 12.7655 7.40039 13.1898C7.40039 13.6142 7.56896 14.0212 7.86902 14.3212C8.16908 14.6213 8.57604 14.7898 9.00039 14.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 9.18945V17.1895M1 9.18945C1 13.6079 4.5816 17.1895 9 17.1895C13.4184 17.1895 17 13.6079 17 9.18945C17 4.77105 13.4184 1.18945 9 1.18945C4.5816 1.18945 1 4.77105 1 9.18945Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                231456
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.00039 10.7898C5.42474 10.7898 5.8317 10.6213 6.13176 10.3212C6.43182 10.0212 6.60039 9.61419 6.60039 9.18984C6.60039 8.7655 6.43182 8.35853 6.13176 8.05847C5.8317 7.75842 5.42474 7.58984 5.00039 7.58984C4.57604 7.58984 4.16908 7.75842 3.86902 8.05847C3.56896 8.35853 3.40039 8.7655 3.40039 9.18984C3.40039 9.61419 3.56896 10.0212 3.86902 10.3212C4.16908 10.6213 4.57604 10.7898 5.00039 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.0004 10.7898C13.4247 10.7898 13.8317 10.6213 14.1318 10.3212C14.4318 10.0212 14.6004 9.61419 14.6004 9.18984C14.6004 8.7655 14.4318 8.35853 14.1318 8.05847C13.8317 7.75842 13.4247 7.58984 13.0004 7.58984C12.576 7.58984 12.1691 7.75842 11.869 8.05847C11.569 8.35853 11.4004 8.7655 11.4004 9.18984C11.4004 9.61419 11.569 10.0212 11.869 10.3212C12.1691 10.6213 12.576 10.7898 13.0004 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 6.78984C9.42474 6.78984 9.8317 6.62127 10.1318 6.32121C10.4318 6.02116 10.6004 5.61419 10.6004 5.18984C10.6004 4.7655 10.4318 4.35853 10.1318 4.05847C9.8317 3.75841 9.42474 3.58984 9.00039 3.58984C8.57604 3.58984 8.16908 3.75841 7.86902 4.05847C7.56896 4.35853 7.40039 4.7655 7.40039 5.18984C7.40039 5.61419 7.56896 6.02116 7.86902 6.32121C8.16908 6.62127 8.57604 6.78984 9.00039 6.78984Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 14.7898C9.42474 14.7898 9.8317 14.6213 10.1318 14.3212C10.4318 14.0212 10.6004 13.6142 10.6004 13.1898C10.6004 12.7655 10.4318 12.3585 10.1318 12.0585C9.8317 11.7584 9.42474 11.5898 9.00039 11.5898C8.57604 11.5898 8.16908 11.7584 7.86902 12.0585C7.56896 12.3585 7.40039 12.7655 7.40039 13.1898C7.40039 13.6142 7.56896 14.0212 7.86902 14.3212C8.16908 14.6213 8.57604 14.7898 9.00039 14.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 9.18945V17.1895M1 9.18945C1 13.6079 4.5816 17.1895 9 17.1895C13.4184 17.1895 17 13.6079 17 9.18945C17 4.77105 13.4184 1.18945 9 1.18945C4.5816 1.18945 1 4.77105 1 9.18945Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                231456
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3.56591V12.6189C15 13.1325 14.7744 13.6202 14.383 13.9527C13.9916 14.2852 13.4738 14.429 12.967 14.3459L10.722 13.9789L5.278 15.3789L2.468 14.9189C1.6216 14.7807 1.00006 14.0495 1 13.1919V4.13891C0.99999 3.62532 1.22559 3.13765 1.61702 2.80514C2.00844 2.47263 2.52617 2.32885 3.033 2.41191L5.278 2.77891L10.722 1.37891L13.532 1.83891C14.3784 1.9771 14.9999 2.7083 15 3.56591Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.02734 2.7793C6.02734 2.36508 5.69156 2.0293 5.27734 2.0293C4.86313 2.0293 4.52734 2.36508 4.52734 2.7793H6.02734ZM4.52734 15.3793C4.52734 15.7935 4.86313 16.1293 5.27734 16.1293C5.69156 16.1293 6.02734 15.7935 6.02734 15.3793H4.52734ZM11.4707 1.37891C11.4707 0.964693 11.1349 0.628906 10.7207 0.628906C10.3065 0.628906 9.9707 0.964693 9.9707 1.37891H11.4707ZM9.9707 13.9789C9.9707 14.3931 10.3065 14.7289 10.7207 14.7289C11.1349 14.7289 11.4707 14.3931 11.4707 13.9789H9.9707ZM4.52734 2.7793V15.3793H6.02734V2.7793H4.52734ZM9.9707 1.37891V13.9789H11.4707V1.37891H9.9707Z" fill="#fff"/>
+                                        </svg> 
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1360_11294)">
+                                                <path d="M13.4733 17.5608C14.4034 17.5608 15.1575 16.8282 15.1575 15.9245C15.1575 15.0207 14.4034 14.2881 13.4733 14.2881C12.5431 14.2881 11.7891 15.0207 11.7891 15.9245C11.7891 16.8282 12.5431 17.5608 13.4733 17.5608Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52601 4.46999C3.45617 4.46999 4.21022 3.73737 4.21022 2.83363C4.21022 1.92989 3.45617 1.19727 2.52601 1.19727C1.59584 1.19727 0.841797 1.92989 0.841797 2.83363C0.841797 3.73737 1.59584 4.46999 2.52601 4.46999Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52601 17.5608C3.45617 17.5608 4.21022 16.8282 4.21022 15.9245C4.21022 15.0207 3.45617 14.2881 2.52601 14.2881C1.59584 14.2881 0.841797 15.0207 0.841797 15.9245C0.841797 16.8282 1.59584 17.5608 2.52601 17.5608Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52637 4.46973V14.2879" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 3.65234H11.7895C12.2362 3.65234 12.6645 3.82475 12.9804 4.13162C13.2962 4.4385 13.4737 4.85472 13.4737 5.28871V14.2887" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5263 6.10636L8 3.65181L10.5263 1.19727" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1360_11294">
+                                                    <rect width="16" height="18" fill="white" transform="translate(0 0.378906)"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1360_11273)">
+                                                <path d="M1.23077 0.189453C1.23077 0.189453 0 0.189453 0 1.42022V7.76853C0 9.89776 0.435692 12.4971 4.30769 12.4971H4.92308V8.80484L1.84615 10.0356C1.84615 10.0356 1.84615 6.95868 4.92308 6.95868V5.11253C4.92308 4.24115 5.03015 3.48791 5.53846 2.92791C6.00738 2.41099 6.77538 1.37961 8.80739 2.34822L9.84615 3.02391V1.42022C9.84615 1.42022 9.84615 0.189453 8.61539 0.189453C7.744 0.189453 6.18092 1.42022 4.92308 1.42022C3.66523 1.42022 2.19938 0.189453 1.23077 0.189453ZM2.46154 2.65099C2.78796 2.65099 3.10101 2.78066 3.33182 3.01148C3.56264 3.24229 3.69231 3.55534 3.69231 3.88176C3.69231 4.20818 3.56264 4.52123 3.33182 4.75205C3.10101 4.98286 2.78796 5.11253 2.46154 5.11253C2.13512 5.11253 1.82207 4.98286 1.59125 4.75205C1.36044 4.52123 1.23077 4.20818 1.23077 3.88176C1.23077 3.55534 1.36044 3.24229 1.59125 3.01148C1.82207 2.78066 2.13512 2.65099 2.46154 2.65099ZM7.38462 3.88176C7.38462 3.88176 6.15385 3.88176 6.15385 5.11253V11.2664C6.15385 13.7279 7.38462 16.1895 11.0769 16.1895C14.7692 16.1895 16 13.7279 16 11.2664V5.11253C16 3.88176 14.7692 3.88176 14.7692 3.88176C13.8978 3.88176 12.3348 5.11253 11.0769 5.11253C9.81908 5.11253 8.35323 3.88176 7.38462 3.88176ZM8.61539 6.3433C8.9418 6.3433 9.25486 6.47297 9.48567 6.70378C9.71648 6.9346 9.84615 7.24765 9.84615 7.57407C9.84615 7.90049 9.71648 8.21354 9.48567 8.44435C9.25486 8.67517 8.9418 8.80484 8.61539 8.80484C8.28896 8.80484 7.97591 8.67517 7.7451 8.44435C7.51429 8.21354 7.38462 7.90049 7.38462 7.57407C7.38462 7.24765 7.51429 6.9346 7.7451 6.70378C7.97591 6.47297 8.28896 6.3433 8.61539 6.3433ZM13.5385 6.3433C13.8649 6.3433 14.1779 6.47297 14.4087 6.70378C14.6396 6.9346 14.7692 7.24765 14.7692 7.57407C14.7692 7.90049 14.6396 8.21354 14.4087 8.44435C14.1779 8.67517 13.8649 8.80484 13.5385 8.80484C13.212 8.80484 12.899 8.67517 12.6682 8.44435C12.4374 8.21354 12.3077 7.90049 12.3077 7.57407C12.3077 7.24765 12.4374 6.9346 12.6682 6.70378C12.899 6.47297 13.212 6.3433 13.5385 6.3433ZM8 11.2664H14.1538C14.1538 11.2664 14.1538 14.3433 11.0769 14.3433C8 14.3433 8 11.2664 8 11.2664Z" fill="#fff"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1360_11273">
+                                                    <rect width="16" height="16" fill="white" transform="translate(0 0.189453)"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg> 
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.00039 10.7898C5.42474 10.7898 5.8317 10.6213 6.13176 10.3212C6.43182 10.0212 6.60039 9.61419 6.60039 9.18984C6.60039 8.7655 6.43182 8.35853 6.13176 8.05847C5.8317 7.75842 5.42474 7.58984 5.00039 7.58984C4.57604 7.58984 4.16908 7.75842 3.86902 8.05847C3.56896 8.35853 3.40039 8.7655 3.40039 9.18984C3.40039 9.61419 3.56896 10.0212 3.86902 10.3212C4.16908 10.6213 4.57604 10.7898 5.00039 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.0004 10.7898C13.4247 10.7898 13.8317 10.6213 14.1318 10.3212C14.4318 10.0212 14.6004 9.61419 14.6004 9.18984C14.6004 8.7655 14.4318 8.35853 14.1318 8.05847C13.8317 7.75842 13.4247 7.58984 13.0004 7.58984C12.576 7.58984 12.1691 7.75842 11.869 8.05847C11.569 8.35853 11.4004 8.7655 11.4004 9.18984C11.4004 9.61419 11.569 10.0212 11.869 10.3212C12.1691 10.6213 12.576 10.7898 13.0004 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 6.78984C9.42474 6.78984 9.8317 6.62127 10.1318 6.32121C10.4318 6.02116 10.6004 5.61419 10.6004 5.18984C10.6004 4.7655 10.4318 4.35853 10.1318 4.05847C9.8317 3.75841 9.42474 3.58984 9.00039 3.58984C8.57604 3.58984 8.16908 3.75841 7.86902 4.05847C7.56896 4.35853 7.40039 4.7655 7.40039 5.18984C7.40039 5.61419 7.56896 6.02116 7.86902 6.32121C8.16908 6.62127 8.57604 6.78984 9.00039 6.78984Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 14.7898C9.42474 14.7898 9.8317 14.6213 10.1318 14.3212C10.4318 14.0212 10.6004 13.6142 10.6004 13.1898C10.6004 12.7655 10.4318 12.3585 10.1318 12.0585C9.8317 11.7584 9.42474 11.5898 9.00039 11.5898C8.57604 11.5898 8.16908 11.7584 7.86902 12.0585C7.56896 12.3585 7.40039 12.7655 7.40039 13.1898C7.40039 13.6142 7.56896 14.0212 7.86902 14.3212C8.16908 14.6213 8.57604 14.7898 9.00039 14.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 9.18945V17.1895M1 9.18945C1 13.6079 4.5816 17.1895 9 17.1895C13.4184 17.1895 17 13.6079 17 9.18945C17 4.77105 13.4184 1.18945 9 1.18945C4.5816 1.18945 1 4.77105 1 9.18945Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                231456
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.00039 10.7898C5.42474 10.7898 5.8317 10.6213 6.13176 10.3212C6.43182 10.0212 6.60039 9.61419 6.60039 9.18984C6.60039 8.7655 6.43182 8.35853 6.13176 8.05847C5.8317 7.75842 5.42474 7.58984 5.00039 7.58984C4.57604 7.58984 4.16908 7.75842 3.86902 8.05847C3.56896 8.35853 3.40039 8.7655 3.40039 9.18984C3.40039 9.61419 3.56896 10.0212 3.86902 10.3212C4.16908 10.6213 4.57604 10.7898 5.00039 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.0004 10.7898C13.4247 10.7898 13.8317 10.6213 14.1318 10.3212C14.4318 10.0212 14.6004 9.61419 14.6004 9.18984C14.6004 8.7655 14.4318 8.35853 14.1318 8.05847C13.8317 7.75842 13.4247 7.58984 13.0004 7.58984C12.576 7.58984 12.1691 7.75842 11.869 8.05847C11.569 8.35853 11.4004 8.7655 11.4004 9.18984C11.4004 9.61419 11.569 10.0212 11.869 10.3212C12.1691 10.6213 12.576 10.7898 13.0004 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 6.78984C9.42474 6.78984 9.8317 6.62127 10.1318 6.32121C10.4318 6.02116 10.6004 5.61419 10.6004 5.18984C10.6004 4.7655 10.4318 4.35853 10.1318 4.05847C9.8317 3.75841 9.42474 3.58984 9.00039 3.58984C8.57604 3.58984 8.16908 3.75841 7.86902 4.05847C7.56896 4.35853 7.40039 4.7655 7.40039 5.18984C7.40039 5.61419 7.56896 6.02116 7.86902 6.32121C8.16908 6.62127 8.57604 6.78984 9.00039 6.78984Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 14.7898C9.42474 14.7898 9.8317 14.6213 10.1318 14.3212C10.4318 14.0212 10.6004 13.6142 10.6004 13.1898C10.6004 12.7655 10.4318 12.3585 10.1318 12.0585C9.8317 11.7584 9.42474 11.5898 9.00039 11.5898C8.57604 11.5898 8.16908 11.7584 7.86902 12.0585C7.56896 12.3585 7.40039 12.7655 7.40039 13.1898C7.40039 13.6142 7.56896 14.0212 7.86902 14.3212C8.16908 14.6213 8.57604 14.7898 9.00039 14.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 9.18945V17.1895M1 9.18945C1 13.6079 4.5816 17.1895 9 17.1895C13.4184 17.1895 17 13.6079 17 9.18945C17 4.77105 13.4184 1.18945 9 1.18945C4.5816 1.18945 1 4.77105 1 9.18945Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                231456
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3.56591V12.6189C15 13.1325 14.7744 13.6202 14.383 13.9527C13.9916 14.2852 13.4738 14.429 12.967 14.3459L10.722 13.9789L5.278 15.3789L2.468 14.9189C1.6216 14.7807 1.00006 14.0495 1 13.1919V4.13891C0.99999 3.62532 1.22559 3.13765 1.61702 2.80514C2.00844 2.47263 2.52617 2.32885 3.033 2.41191L5.278 2.77891L10.722 1.37891L13.532 1.83891C14.3784 1.9771 14.9999 2.7083 15 3.56591Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.02734 2.7793C6.02734 2.36508 5.69156 2.0293 5.27734 2.0293C4.86313 2.0293 4.52734 2.36508 4.52734 2.7793H6.02734ZM4.52734 15.3793C4.52734 15.7935 4.86313 16.1293 5.27734 16.1293C5.69156 16.1293 6.02734 15.7935 6.02734 15.3793H4.52734ZM11.4707 1.37891C11.4707 0.964693 11.1349 0.628906 10.7207 0.628906C10.3065 0.628906 9.9707 0.964693 9.9707 1.37891H11.4707ZM9.9707 13.9789C9.9707 14.3931 10.3065 14.7289 10.7207 14.7289C11.1349 14.7289 11.4707 14.3931 11.4707 13.9789H9.9707ZM4.52734 2.7793V15.3793H6.02734V2.7793H4.52734ZM9.9707 1.37891V13.9789H11.4707V1.37891H9.9707Z" fill="#fff"/>
+                                        </svg> 
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1360_11294)">
+                                                <path d="M13.4733 17.5608C14.4034 17.5608 15.1575 16.8282 15.1575 15.9245C15.1575 15.0207 14.4034 14.2881 13.4733 14.2881C12.5431 14.2881 11.7891 15.0207 11.7891 15.9245C11.7891 16.8282 12.5431 17.5608 13.4733 17.5608Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52601 4.46999C3.45617 4.46999 4.21022 3.73737 4.21022 2.83363C4.21022 1.92989 3.45617 1.19727 2.52601 1.19727C1.59584 1.19727 0.841797 1.92989 0.841797 2.83363C0.841797 3.73737 1.59584 4.46999 2.52601 4.46999Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52601 17.5608C3.45617 17.5608 4.21022 16.8282 4.21022 15.9245C4.21022 15.0207 3.45617 14.2881 2.52601 14.2881C1.59584 14.2881 0.841797 15.0207 0.841797 15.9245C0.841797 16.8282 1.59584 17.5608 2.52601 17.5608Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M2.52637 4.46973V14.2879" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 3.65234H11.7895C12.2362 3.65234 12.6645 3.82475 12.9804 4.13162C13.2962 4.4385 13.4737 4.85472 13.4737 5.28871V14.2887" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5263 6.10636L8 3.65181L10.5263 1.19727" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1360_11294">
+                                                    <rect width="16" height="18" fill="white" transform="translate(0 0.378906)"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1360_11273)">
+                                                <path d="M1.23077 0.189453C1.23077 0.189453 0 0.189453 0 1.42022V7.76853C0 9.89776 0.435692 12.4971 4.30769 12.4971H4.92308V8.80484L1.84615 10.0356C1.84615 10.0356 1.84615 6.95868 4.92308 6.95868V5.11253C4.92308 4.24115 5.03015 3.48791 5.53846 2.92791C6.00738 2.41099 6.77538 1.37961 8.80739 2.34822L9.84615 3.02391V1.42022C9.84615 1.42022 9.84615 0.189453 8.61539 0.189453C7.744 0.189453 6.18092 1.42022 4.92308 1.42022C3.66523 1.42022 2.19938 0.189453 1.23077 0.189453ZM2.46154 2.65099C2.78796 2.65099 3.10101 2.78066 3.33182 3.01148C3.56264 3.24229 3.69231 3.55534 3.69231 3.88176C3.69231 4.20818 3.56264 4.52123 3.33182 4.75205C3.10101 4.98286 2.78796 5.11253 2.46154 5.11253C2.13512 5.11253 1.82207 4.98286 1.59125 4.75205C1.36044 4.52123 1.23077 4.20818 1.23077 3.88176C1.23077 3.55534 1.36044 3.24229 1.59125 3.01148C1.82207 2.78066 2.13512 2.65099 2.46154 2.65099ZM7.38462 3.88176C7.38462 3.88176 6.15385 3.88176 6.15385 5.11253V11.2664C6.15385 13.7279 7.38462 16.1895 11.0769 16.1895C14.7692 16.1895 16 13.7279 16 11.2664V5.11253C16 3.88176 14.7692 3.88176 14.7692 3.88176C13.8978 3.88176 12.3348 5.11253 11.0769 5.11253C9.81908 5.11253 8.35323 3.88176 7.38462 3.88176ZM8.61539 6.3433C8.9418 6.3433 9.25486 6.47297 9.48567 6.70378C9.71648 6.9346 9.84615 7.24765 9.84615 7.57407C9.84615 7.90049 9.71648 8.21354 9.48567 8.44435C9.25486 8.67517 8.9418 8.80484 8.61539 8.80484C8.28896 8.80484 7.97591 8.67517 7.7451 8.44435C7.51429 8.21354 7.38462 7.90049 7.38462 7.57407C7.38462 7.24765 7.51429 6.9346 7.7451 6.70378C7.97591 6.47297 8.28896 6.3433 8.61539 6.3433ZM13.5385 6.3433C13.8649 6.3433 14.1779 6.47297 14.4087 6.70378C14.6396 6.9346 14.7692 7.24765 14.7692 7.57407C14.7692 7.90049 14.6396 8.21354 14.4087 8.44435C14.1779 8.67517 13.8649 8.80484 13.5385 8.80484C13.212 8.80484 12.899 8.67517 12.6682 8.44435C12.4374 8.21354 12.3077 7.90049 12.3077 7.57407C12.3077 7.24765 12.4374 6.9346 12.6682 6.70378C12.899 6.47297 13.212 6.3433 13.5385 6.3433ZM8 11.2664H14.1538C14.1538 11.2664 14.1538 14.3433 11.0769 14.3433C8 14.3433 8 11.2664 8 11.2664Z" fill="#fff"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1360_11273">
+                                                    <rect width="16" height="16" fill="white" transform="translate(0 0.189453)"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg> 
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                    <li class="grid__events-item events__card">
+                        <a class="event__content-link" href="#">
+                            <div class="events__card-image">
+                                <img class="poster" src="./img/events/poster_3.jpg" alt="poster">
+                                <div class="event__content flex">
+                                    <div class="event__content-top flex">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.00039 10.7898C5.42474 10.7898 5.8317 10.6213 6.13176 10.3212C6.43182 10.0212 6.60039 9.61419 6.60039 9.18984C6.60039 8.7655 6.43182 8.35853 6.13176 8.05847C5.8317 7.75842 5.42474 7.58984 5.00039 7.58984C4.57604 7.58984 4.16908 7.75842 3.86902 8.05847C3.56896 8.35853 3.40039 8.7655 3.40039 9.18984C3.40039 9.61419 3.56896 10.0212 3.86902 10.3212C4.16908 10.6213 4.57604 10.7898 5.00039 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.0004 10.7898C13.4247 10.7898 13.8317 10.6213 14.1318 10.3212C14.4318 10.0212 14.6004 9.61419 14.6004 9.18984C14.6004 8.7655 14.4318 8.35853 14.1318 8.05847C13.8317 7.75842 13.4247 7.58984 13.0004 7.58984C12.576 7.58984 12.1691 7.75842 11.869 8.05847C11.569 8.35853 11.4004 8.7655 11.4004 9.18984C11.4004 9.61419 11.569 10.0212 11.869 10.3212C12.1691 10.6213 12.576 10.7898 13.0004 10.7898V10.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 6.78984C9.42474 6.78984 9.8317 6.62127 10.1318 6.32121C10.4318 6.02116 10.6004 5.61419 10.6004 5.18984C10.6004 4.7655 10.4318 4.35853 10.1318 4.05847C9.8317 3.75841 9.42474 3.58984 9.00039 3.58984C8.57604 3.58984 8.16908 3.75841 7.86902 4.05847C7.56896 4.35853 7.40039 4.7655 7.40039 5.18984C7.40039 5.61419 7.56896 6.02116 7.86902 6.32121C8.16908 6.62127 8.57604 6.78984 9.00039 6.78984Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00039 14.7898C9.42474 14.7898 9.8317 14.6213 10.1318 14.3212C10.4318 14.0212 10.6004 13.6142 10.6004 13.1898C10.6004 12.7655 10.4318 12.3585 10.1318 12.0585C9.8317 11.7584 9.42474 11.5898 9.00039 11.5898C8.57604 11.5898 8.16908 11.7584 7.86902 12.0585C7.56896 12.3585 7.40039 12.7655 7.40039 13.1898C7.40039 13.6142 7.56896 14.0212 7.86902 14.3212C8.16908 14.6213 8.57604 14.7898 9.00039 14.7898Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 9.18945V17.1895M1 9.18945C1 13.6079 4.5816 17.1895 9 17.1895C13.4184 17.1895 17 13.6079 17 9.18945C17 4.77105 13.4184 1.18945 9 1.18945C4.5816 1.18945 1 4.77105 1 9.18945Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="event__users flex">
+                                            <div class="event__users-img">
+                                                <img src="./img/events/icons/users.svg" alt="users">
+                                            </div>
+                                            <span class="text">
+                                                231456
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tikets__price">
+                                        <p class="tikets__price-text">
+                                            билеты
+                                        </p>
+                                        <p class="tikets__price-text">
+                                            от 1200₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event__content-text text">
+                                Название события
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

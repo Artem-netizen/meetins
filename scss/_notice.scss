@@ -1,0 +1,174 @@
+.notice{
+    a{
+        color: $black;
+    }
+    &__push-btns{
+        margin-top: 3px;
+        .invitation__btn{
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.new-main__notice{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        z-index: 5;
+        height: 10px;
+        background: $red;
+        width: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+.main__notice{
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    max-width: none;
+    &-user{
+        flex-direction: row;
+        max-width: none;
+    }
+    &-image{
+        position: relative;
+        margin-right: 10px;
+        max-width: 60px;
+        flex: 0 0 60px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-text{
+        a{
+            display: inline-block;
+            color: $blue;
+        }
+    }
+}
+.new__notice{
+    font-weight: 600 !important;
+}
+.accept__text{
+    color: $gray_0;
+}
+
+.timing{
+    white-space: nowrap;
+    color: $gray_0;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+// уведомления в шапке
+.header__notice{
+    position: relative;
+}
+.notice__dropdown{
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    z-index: 15;
+    width: 100%;
+    max-width: 380px;
+    &-inner{
+        border-radius: $br9;
+        background: $white;
+        box-shadow: 0px 0px 26px rgba(81, 81, 81, 0.15);
+        -webkit-border-radius: $br9;
+        -moz-border-radius: $br9;
+        -ms-border-radius: $br9;
+        -o-border-radius: $br9;
+        .center-btn{
+            padding-bottom: 7px;
+            padding-top: 7px;
+            color: $gray_0;
+            border-top: 1px solid $gray_3;
+        }
+    }
+    &-top{
+        text-align: center;
+    }
+    &-list{
+        position: relative;
+        margin: 5px 5px 5px 0;
+        max-height: 288px;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        background: $white;
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track{
+            width: 5px;
+            border-radius: 2.5px;
+            background: rgba(219, 219, 219, 0.4);
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 2.5px;
+            background: rgba(112, 112, 112, 0.6);
+        }
+        .main__notice{
+            padding: 5px 15px 5px 20px;
+        }
+        &__emptiness{
+            width: 100%;
+            height: 188px;
+            overflow-y: auto;
+        }
+    }
+    // содержательные классы 
+    &-height__auto{
+        height: auto;
+    }
+    &-emptiness{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+    // 
+    &::before{
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        z-index: 1;
+        line-height: 0px;
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 0 20px 25px 20px;
+        border-color: transparent transparent $white transparent;
+        _border-color: #000000 #000000 $white #000000;
+        _filter:progid:DXImageTransform.Microsoft.Chroma(color="#000000");
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+}

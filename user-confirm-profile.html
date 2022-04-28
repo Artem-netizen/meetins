@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container block__style indent-bottom">
+        <div class="user__account">
+            <div class="choose">
+                <button class="user__account-menu top__btn choose__icon" type="button">
+                    <img src="./img/events/occasion/choose-down.svg" alt="Выбрать">
+                </button>
+                <div class="user__account-dropdown dropdown">
+                    <ul class="dropdown__inner-list">
+                        <li>
+                            <a class="small__text" href="#">
+                                Скопировать ссылку
+                            </a>
+                        </li>
+                        <li>
+                            <a class="small__text" href="#">
+                                Редактировать
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="profile-pic">
+                    <img class="profile__avatar" src="./img/photo/img2.png" alt="avatar" id="avatar">
+                    <input class="profile__input" type="file" name="Выберите файл" id="fileId">
+                    <label class="profile__update-inner flex" for="fileId">
+                        <img class="update-img" src="./img/photo/update-photo.svg" alt="загрузить фото">
+                        <span class="text">
+                            Обновить фото
+                        </span>
+                    </label>
+                </div>
+                <div class="user__account-data">
+                    <h2 class="user__account-title big-title">
+                        Алиса, 24 года
+                    </h2>
+                    <div class="user__account-description__location flex indent-bottom">
+                        <div class="user__account-location__image">
+                            <img src="./img/settings/location_icon.svg" alt="местоположение">
+                        </div>
+                        <span>
+                            Санкт-Петербург
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container block__style indent-bottom">
+        <div class="user__account">
+            <div class="user__account-about flex" style="align-items: center !important;">
+                <h3 class="user__account-about__title subtitle">
+                    О себе
+                </h3>
+                <div class="user__account-about__confirm flex">
+                    <button class="warning__btn success__check" id="successCheck" type="button">
+                        <img src="./img/settings/success.svg" alt="успешно">
+                    </button>
+                    <button class="warning__btn error__check" id="errorCheck" type="button">
+                        <img src="./img/settings/error.svg" alt="ошибка">
+                    </button>
+                </div>
+            </div>
+            <div class="editing">
+                <p class="text">
+                    Первым делом в мужчине обращаю внимание на глаза.
+                    Если их нет, то у меня появляется шанс
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container indent-bottom">
+        <div class="user__account-grid grid">
+            <div class="user__account user__account-secondary__description block__style" id="interest">
+                <div class="user__account-block__top flex">
+                    <h3 class="user__account-subtitle subtitle">
+                        Интересы
+                    </h3>
+                    <button class="add">
+                        <img class="add__image" src="./img/photo/add.svg" alt="добавить">
+                    </button>
+                </div>
+                <ul class="add__description-list interest flex">
+                    <li>
+                        <p class="text">
+                            Единоборства
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            Плавание
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            Йога
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="user__account user__account-secondary__description block__style" id="places">
+                <div class="user__account-block__top flex">
+                    <h3 class="user__account-subtitle subtitle">
+                        Места
+                    </h3>
+                    <button class="add">
+                        <img class="add__image" src="./img/photo/add.svg" alt="добавить">
+                    </button>
+                </div>
+                <ul class="add__description-list places flex">
+                    <li>
+                        <p class="text">
+                            Napoli
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            Интурист
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container block__style">
+        <div class="user__account">
+            <div class="user__account-gallery__title flex justify-content">
+                <h3 class="subtitle">
+                    Фотографии
+                </h3>
+                <label class="user__account-add__photo" for="photoFileId">
+                    добавить фото
+                    <input type="file" name="выберите фотографию" id="photoFileId">
+                </label>
+            </div>
+            <div class="gallery__grid grid">
+                <div class="gallery__grid-image gallery__editing">
+                    <img src="./img/photo/user1.jpg" alt="user">
+                    <p class="gallery__checkbox text">
+                        это главное фото
+                    </p>
+                </div>
+                <div class="gallery__grid-image gallery__editing">
+                    <img src="./img/photo/user1.jpg" alt="user">
+                    <img class="cancel-icon" src="./img/photo/cancel.svg" alt="убрать">
+                    <div class="gallery__checkbox checkbox">
+                        <input class="gallery-input checkbox__input" type="checkbox" id="checkbox_4">
+                        <label class="gallery__label checkbox__label text" for="checkbox_4">
+                            это главное фото
+                        </label>
+                    </div>
+                </div>
+                <div class="gallery__grid-image gallery__editing">
+                    <img src="./img/photo/user2.jpg" alt="user">
+                </div>
+                <div class="gallery__grid-image gallery__editing">
+                    <img src="./img/photo/user3.jpg" alt="user">
+                </div>
+                <div class="gallery__grid-image gallery__editing">
+                    <img src="./img/photo/user1.jpg" alt="user">
+                    <img class="cancel-icon" src="./img/photo/cancel.svg" alt="убрать">
+                    <div class="gallery__checkbox checkbox">
+                        <input class="gallery-input checkbox__input" type="checkbox" checked id="checkbox_5">
+                        <label class="gallery__label checkbox__label text" for="checkbox_5">
+                            это главное фото
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

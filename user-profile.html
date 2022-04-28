@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container block__style indent-bottom">
+        <div class="user__account">
+            <div class="choose">
+                <button class="user__account-menu top__btn choose__icon" type="button">
+                    <img src="./img/events/occasion/choose-down.svg" alt="Выбрать">
+                </button>
+                <div class="user__account-dropdown dropdown">
+                    <ul class="dropdown__inner-list">
+                        <li>
+                            <a class="small__text" href="#">
+                                Добавить в закладки
+                            </a>
+                        </li>
+                        <li>
+                            <a class="small__text" href="#">
+                                Заблокировать
+                            </a>
+                        </li>
+                        <li>
+                            <a class="small__text" href="#">
+                                Пожаловаться
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="user__account-image">
+                    <img src="./img/photo/img1.png" alt="avatar">
+                </div>
+                <div class="user__account-data">
+                    <h2 class="user__account-title big-title">
+                        Алиса, 24 года
+                    </h2>
+                    <div class="user__account-description__location flex indent-bottom">
+                        <div class="user__account-location__image">
+                            <img src="./img/settings/location_icon.svg" alt="местоположение">
+                        </div>
+                        <span>
+                            Санкт-Петербург
+                        </span>
+                    </div>
+                    <div class="user__btns flex">
+                        <a class="user__actions actions flex message" href="#">
+                            <img src="./img/photo/message.svg" alt="message">
+                            <span>
+                                Общаться
+                            </span>
+                        </a>
+                        <button class="user__actions actions flex append" type="button">
+                            <img src="./img/photo/append.svg" alt="append">
+                            <span>
+                                Пригласить
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container block__style indent-bottom">
+        <div class="user__account">
+            <h3 class="user__account-description__title subtitle">
+                О себе
+            </h3>
+            <div class="editing">
+                <p class="text">
+                    Первым делом в мужчине обращаю внимание на глаза.
+                    Если их нет, то у меня появляется шанс
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container indent-bottom">
+        <div class="user__account-grid grid">
+            <div class="user__account user__account-secondary__description block__style" id="interest">
+                <h3 class="user__account-description__title subtitle">
+                    Интересы
+                </h3>
+                <ul class="add__description-list interest flex">
+                    <li>
+                        <p class="text">
+                            Единоборства
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            Плавание
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            Йога
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="user__account user__account-secondary__description block__style" id="places">
+                <h3 class="user__account-description__title subtitle">
+                    Места
+                </h3>
+                <ul class="add__description-list places flex">
+                    <li>
+                        <p class="text">
+                            Napoli
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">
+                            Интурист
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container block__style">
+        <div class="user__account">
+            <h3 class="user__account-gallery__title subtitle">
+                Фотографии
+            </h3>
+            <div class="gallery__grid grid">
+                <div class="gallery__grid-image">
+                    <img src="./img/photo/user1.jpg" alt="user">
+                </div>
+                <div class="gallery__grid-image">
+                    <img src="./img/photo/user1.jpg" alt="user">
+                </div>
+                <div class="gallery__grid-image">
+                    <img src="./img/photo/user2.jpg" alt="user">
+                </div>
+                <div class="gallery__grid-image">
+                    <img src="./img/photo/user3.jpg" alt="user">
+                </div>
+                <div class="gallery__grid-image">
+                    <img src="./img/photo/user1.jpg" alt="user">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

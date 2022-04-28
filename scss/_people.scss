@@ -1,0 +1,334 @@
+.people__total-description{
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.dating__people{
+    align-items: flex-end !important;
+}
+.show__all-people{
+    position: relative;
+}
+.dating__text{
+    color: $gray_0;
+}
+.show__all-btn{
+    position: relative;
+    border: none;
+    color: $black;
+    cursor: pointer;
+    background: none;
+    &:focus{
+        outline: 1px solid $blue;
+    }
+}
+.arrow__down{
+    margin-left: 4px;
+    max-width: 12px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.dropdown{
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    &__inner-list{
+        position: relative;
+        padding: 20px;
+        border-radius: 6px;
+        background: $white;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        box-shadow: 0px 0px 26px rgba(81, 81, 81, 0.15);
+        li{
+            margin-bottom: 10px;
+            line-height: 0px;
+            cursor: pointer;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: 2px;
+            width: 0;
+            height: 0;
+            z-index: 1;
+            line-height: 0px;
+            border-radius: 2px;
+            border-style: solid;
+            border-width: 0 10px 20px 10px;
+            border-color: transparent transparent #ffffff transparent;
+            _border-color: #000000 #000000 #ffffff #000000;
+            _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        }
+    }
+}
+// 
+.people {
+    &__content {
+        grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    }
+    &__item{
+        max-width: 160px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: .3s;
+    }
+    &__image {
+        position: relative;
+        max-width: 160px;
+        width: 100%;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 17px;
+            right: 17px;
+            width: 12px;
+            height: 12px;
+            background: $green;
+            border-radius: 50%;
+            border: 2px solid $white;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        &:hover{
+            .additional__block{
+                opacity: 1;
+                pointer-events: all;
+                transform: translateX(-50%) translateY(0px);
+                -webkit-transform: translateX(-50%) translateY(0px);
+                -moz-transform: translateX(-50%) translateY(0px);
+                -ms-transform: translateX(-50%) translateY(0px);
+                -o-transform: translateX(-50%) translateY(0px);
+            }
+        }
+    }
+}
+.name__user{
+    margin-top: 10px;
+    color: $black;
+    text-align: center;
+}
+.additional__block{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    bottom: 20px;
+    display: flex;
+    transition: .3s;
+    align-items: center;
+    transform: translateX(-50%) translateY(15px);
+    -webkit-transform: translateX(-50%) translateY(15px);
+    -moz-transform: translateX(-50%) translateY(15px);
+    -ms-transform: translateX(-50%) translateY(15px);
+    -o-transform: translateX(-50%) translateY(15px);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.actions{
+    margin-right: 10px;
+    position: relative;
+    padding: 10px;
+    max-width: 36px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:focus{
+        outline: 1px solid $blue;
+    }
+}
+.message{
+    background: $blue;
+    &:hover{
+        background: #468ed6;
+    }
+}
+.append{
+    background: linear-gradient(68.42deg, #50F2C4 0%, #26D0E3 39.67%, #757AFF 100%);
+    &:hover{
+        background: linear-gradient(68.42deg, #757AFF 0%, #26D0E3 39.67%, #50F2C4 100%);
+    }
+}
+// 
+.invitation{
+    position: relative;
+    &__wrapper{
+        opacity: 0;
+        pointer-events: none;
+        padding-top: 25px;
+        position: absolute;
+        transition: 0.3s;
+        right: 20%;
+        z-index: 4;
+        top: 25px;
+        width: 480px;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+    &__inner{
+        overflow-y: auto;
+        overflow: hidden;
+        background: $white;
+        border-radius: 9px;
+        box-shadow: 0px 0px 26px rgba(81, 81, 81, 0.15);
+        .upcoming__left-image{
+            max-width: 50px;
+            height: 60px;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+    }
+    &__btn{
+        padding: 5px 14px;
+        border: none;
+        outline: none;
+        color: $white;
+        transition: .3s;
+        cursor: pointer;
+        font-weight: 600;
+        background: $blue;
+        user-select: none;
+        border-radius: 15px;
+        border: 1px solid $blue;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        &:hover{
+            background: #337ac2;
+            border: 1px solid #337ac2;
+        }
+        &-cancel{
+            color: $black;
+            background: $white;
+            border: 1px solid $gray_0;
+            &:hover{
+                background: #ececec;
+                border: 1px solid $gray_0;
+            }
+        }
+    }
+    .upcoming__content{
+        margin: 5px 5px 5px 0;
+        max-height: 265px;
+        height: 100%;
+    }
+    .near__inner{
+        margin-bottom: 5px;
+        .small__text{
+            line-height: 17px;
+        }
+    }
+    &:hover{
+        .invitation__wrapper{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .announcement{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+.title__event{
+    white-space: nowrap;
+    line-height: 17px !important;
+}
+.very-small__text{
+    color: $black;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+}
+// announcement
+.announcement{
+    opacity: 0;
+    pointer-events: none;
+    padding-top: 25px;
+    position: absolute;
+    top: 25px;
+    right: 20%;
+    z-index: 7;
+    height: auto;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    &__inner{
+        width: 380px;
+        padding: 20px;
+        background: $white;
+        border-radius: $br9;
+        -webkit-border-radius: $br9;
+        -moz-border-radius: $br9;
+        -ms-border-radius: $br9;
+        -o-border-radius: $br9;
+        box-shadow: 0px 0px 26px rgba(81, 81, 81, 0.15);
+        p{
+            margin-bottom: 15px;
+        }
+    }
+    &__btn{
+        margin-right: 15px;
+        border: none;
+        outline: none;
+        color: $white;
+        font-weight: 600;
+        user-select: none;
+        padding: 5px 13px;
+        background: $blue;
+        border-radius: $br16;
+        -webkit-border-radius: $br16;
+        -moz-border-radius: $br16;
+        -ms-border-radius: $br16;
+        -o-border-radius: $br16;
+    }
+    &__link{
+        display: inline-block;
+        color: $gray_0;
+        font-weight: 400;
+    }
+    &__text{
+        color: $black;
+    }
+}

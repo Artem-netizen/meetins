@@ -1,0 +1,335 @@
+.user__account{
+    padding: 20px;
+    &-menu{
+        position: absolute;
+        z-index: 3;
+        right: 0px;
+    }
+    &-dropdown{
+        width: 170px;
+    }
+    &-title{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
+        color: $black;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 10px;
+            z-index: 5;
+            right: -20px;
+            height: 10px;
+            border-radius: 50%;
+            background: $green;
+            border: 2px solid $white;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    &-image{
+        margin-right: 110px;
+        max-width: 280px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-location__image{
+        margin-right: 10px;
+        max-width: 16px;
+        flex: 0 0 16px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-about{
+        margin-bottom: 8px;
+        align-items: flex-end !important;
+        &__title{
+            margin-right: 10px;
+            line-height: 17px !important;
+        }
+    }
+    &-block__top{
+        margin-bottom: 15px;
+    }
+    &-grid{
+        grid-gap: 20px !important;
+        grid-template-columns: repeat(auto-fit, minmax(465px, 1fr));
+    }
+    &-secondary__description{
+        margin-bottom: 0 !important;
+        max-width: 470px;
+        overflow: hidden;
+        width: 100%;
+    }
+    &-add__block{
+        margin-bottom: 7px;
+    }
+    &-description__title{
+        margin-bottom: 5px;
+    }
+    &-gallery__title{
+        margin-bottom: 15px;
+    }
+    &-add__photo{
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(112, 112, 112, 0.4);
+        input{
+            display: none;
+        }
+    }
+}
+.user__actions{
+    margin-right: 35px;
+    padding: 13px 23px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 17px;
+    max-width: none;
+    color: $white;
+    width: auto;
+    line-height: 23px;
+    letter-spacing: -0.03em;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    span{
+        margin-left: 10px;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    &-description__title{
+        margin-bottom: 5px;
+    }
+}
+.editing{
+    max-width: 435px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+.add{
+    margin-left: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    user-select: none;
+    max-width: 14px;
+    flex: 0 0 14px;
+    width: 100%;
+    &__description-list{
+        flex-wrap: wrap;
+        li{
+            margin: 7px 14px 7px 0;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        p{
+            color: $gray_0;
+        }
+    }
+    svg{
+        path{
+            transition: .3s;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+        }
+    }
+    &:hover{
+        svg path{
+            fill: #222222;
+            fill-opacity: 1;
+        }
+    }
+}
+.interest{
+    li{
+        padding: 3px 10px;
+        border-radius: 4px;
+        border: 1px solid $blue;
+    }
+}
+.gallery__grid{
+    grid-gap: 20px !important;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    &-image{
+        position: relative;
+        max-width: 300px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .cancel-icon{
+        position: absolute;
+        opacity: 0;
+        top: 15px;
+        z-index: 5;
+        right: 15px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: .3s;
+        pointer-events: none;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+}
+// класс в галлерее для изменений удаления картинок
+.gallery__editing{
+    &:hover{
+        .cancel-icon{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .gallery__checkbox{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+.gallery__checkbox{
+    margin-bottom: 0;
+    position: absolute;
+    color: $white;
+    bottom: 15px;
+    opacity: 0;
+    left: 15px;
+    z-index: 5;
+    transition: .3s;
+    pointer-events: none;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.gallery__label{
+    color: $white;
+    &::after{
+        background-image: url('../img/settings/success.svg');
+    }
+    &::before{
+        border: 1.5px solid $white;
+    }
+    &:hover::before{
+        border: 1.5px solid $white;
+    }
+}
+.gallery-input:checked + .gallery__label:before {
+    background: $white;
+}
+// стили для редактирования
+.profile-pic{
+    margin-right: 110px;
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    &:hover{
+        .profile__update-inner{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(-50%) translateY(0px);
+            -webkit-transform: translateX(-50%) translateY(0px);
+            -moz-transform: translateX(-50%) translateY(0px);
+            -ms-transform: translateX(-50%) translateY(0px);
+            -o-transform: translateX(-50%) translateY(0px);
+}
+    }
+}
+.profile__avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile__input{
+    display: none;
+}
+.profile__update-inner{
+    padding-bottom: 30px;
+    position: absolute;
+    padding-top: 18px;
+    opacity: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 5;
+    width: 100%;
+    color: $white;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    pointer-events: none;
+    justify-content: center;
+    transform: translateX(-50%) translateY(15px);
+    -webkit-transform: translateX(-50%) translateY(15px);
+    -moz-transform: translateX(-50%) translateY(15px);
+    -ms-transform: translateX(-50%) translateY(15px);
+    -o-transform: translateX(-50%) translateY(15px);
+    background: rgba(112, 112, 112, 0.7);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.update-img{
+    margin-right: 10px;
+}
+.editing__pencil-btn{
+    padding: 0;
+    border: none;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    user-select: none;
+    svg{
+        path{
+            stroke-width: .5;
+            transition: .3s;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+        }
+    }
+    &:hover{
+        path{
+            fill: $black;
+            fill-opacity: 1;
+        }
+    }
+}

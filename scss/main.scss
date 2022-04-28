@@ -1,0 +1,306 @@
+$red: #FF2442;
+$blue: #51A2F2;
+$black: #222222;
+$white: #FFFFFF;
+$green: #16D384;
+$yellow: #FFE55C;
+$gray_0: #707070;
+$gray_1: #FAFAFA;
+$gray_2: #DBDBDB;
+$gray_3: #EAEAEA;
+$light_blue: #F9FBFC;
+$input_default: #D4E8FC;
+$input_focus:rgba(81, 162, 242, 0.8);
+$box_sh_popups: 0px 0px 26px rgba(81, 81, 81, 0.15);
+$input_red: 0px 0px 5px 1px rgba(255, 36, 66, 0.35);
+$box_sh_container: 0px 1px 4px rgba(27, 80, 115, 0.13);
+$input_focus_2: 0px 0px 5px 1px rgba(81, 162, 242, 0.35);
+$input_green: 0px 0px 5px 1px rgba(22, 211, 132, 0.35);
+$btn_blue_hover: 0px 0px 7px 1px rgba(81, 162, 242, 0.8); 
+$btn_yellow_hover: 0px 4px 11px rgba(255, 229, 92, 0.56);
+$btn_green_focus: 0px 0px 7px 1px rgba(81, 203, 242, 0.8);
+$btn_yellow_default: 0px 6px 14px rgba(255, 229, 92, 0.56);
+$br16: 16px;
+$br9: 9px;
+
+// style
+@import './header';
+@import './settings';
+@import './people';
+@import './events';
+@import './search';
+@import './calendar';
+@import './upcoming';
+@import './occasion';
+@import './user-account';
+@import './notice';
+@import './sidebar';
+@import './footer';
+@import './messanges';
+// 
+
+// 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+// 
+html, 
+body{
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    background: $light_blue;
+    font-family: 'Nunito', sans-serif;
+}
+// прижатие футера
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.all-content{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+// глобальные классы
+.big-title{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+}
+.main__title{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 31px;
+}
+.subtitle{
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.small__text{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+}
+// 
+.all-lining{
+    margin-top: 130px;
+}
+.main-container{
+    margin: 0 auto;
+    padding: 0 5px;
+    width: 100%;
+    max-width: 1190px;
+}
+.container {
+    max-width: 980px;
+    width: 100%;
+}
+.indent-bottom{
+    margin-bottom: 20px !important;
+}
+.block__style {
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 4px rgba(27, 80, 115, 0.13);
+    border-radius: $br9;
+    -webkit-border-radius: $br9;
+    -moz-border-radius: $br9;
+    -ms-border-radius: $br9;
+    -o-border-radius: $br9;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+// 
+.main__content{
+    padding: 20px 30px;
+}
+.top__content{
+  padding: 15px 20px;
+}
+// 
+// 
+.top__btn{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+// 
+.flex{
+    display: flex;
+    align-items: center;
+}
+.justify-content{
+    justify-content: space-between;
+}
+// 
+.grid{
+    display: grid;
+    grid-gap: 30px;
+    justify-self: center;
+}
+// 
+.rgba__link{
+    color: $black;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 374.29%);
+}
+.input{
+    padding: 10px 15px;
+    position: relative;
+    display: block;
+    width: 100%;
+    outline: none;
+    transition: .3s;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    border: 1.5px solid $input_default;
+    &__inner{
+        position: relative;
+        max-width: 250px;
+        width: 100%;
+        &:hover{
+            .warning{
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+      }
+    &:focus{
+      border: 1.5px solid $input_focus;
+      box-shadow: 0px 0px 5px 1px rgba(81, 162, 242, 0.35);
+    }
+}
+.icon-down{
+  &::before{
+      content: "";
+      position: absolute;
+      bottom: 16px;
+      right: 20px;
+      top: 16px;
+      z-index: 1;
+      width: 7px;
+      height: 13px;
+      pointer-events: none;
+      background-size: 7px 10px;
+      background-repeat: no-repeat;
+      background-image: url('../img/photo/arrow-down.svg');
+  }
+}
+.number__players{
+    max-width: 140px;
+}
+// 
+.success{
+  color: $green;
+    &-access{
+        border: 1.5px solid $green;
+        box-shadow: 0px 0px 5px 1px rgba(22, 211, 132, 0.35);
+    }
+}
+.access__denied{
+    max-width: 135px;
+    color: $red;
+    &-inactive{
+      border: 1.5px solid $red;
+      box-shadow: 0px 0px 5px 1px rgba(255, 36, 66, 0.35);
+    }
+}

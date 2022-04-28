@@ -1,0 +1,93 @@
+.upcoming{
+    &__inner{
+        padding: 15px 20px 15px 20px;
+    }
+    &__content{
+        max-height: 353px;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track{
+            width: 5px;
+            border-radius: 2.5px;
+            background: rgba(219, 219, 219, 0.4);
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 2.5px;
+            background: rgba(112, 112, 112, 0.6);
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        border-bottom: 1px solid $gray_3;
+        &:last-child{
+            border-bottom: 1px solid transparent;
+        }
+        &:hover{
+            .upcoming__left-image img{
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
+    }
+    &__right-description{
+        flex-wrap: wrap;
+        max-width: 340px;
+        width: 100%;
+    }
+    &__right-subtitle{
+        span{
+            display: block;
+            font-weight: 400;
+        }
+    }
+    &__left-description{
+        align-items: flex-start !important;
+    }
+    &__left-image{
+        margin-right: 10px;
+        overflow: hidden;
+        max-width: 80px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+            object-fit: cover;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+        }
+    }
+}
+.near{
+    display: flex;
+    flex-direction: column;
+    &__inner{
+        margin-bottom: 18px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__image{
+        margin-right: 5px;
+        max-width: 22px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

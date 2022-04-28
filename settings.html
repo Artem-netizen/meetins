@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="block__style">
+            <div class="settings_tabs top__title flex">
+                <h2 class="settings__tab__title main__title">Настройки</h2>
+                <div class="settings__tab-main flex">
+                    <button class="settings__tab tab__active" type="button">Аккаунт</button>
+                    <button class="settings__tab" type="button">Управление подпиской</button>
+                    <button class="settings__tab" type="button">Уведомления</button>
+                    <button class="settings__tab" type="button">Отображение</button>
+                </div>
+            </div>
+            <div class="content settings__content">
+                <div class="settings">
+                    <div class="settings__main">
+                        <div class="settings__tab-account">
+                            <div class="settings__tab__name settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="inputName">Имя</label>
+                                <div class="input__inner">
+                                    <input class="input success-access small__text" id="inputName" type="text" value="Дмитрий">
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                    <span class="settings__notification success small__text" id="successName">
+                                        Имя успешно обновлено!
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="date_of_birth">Дата рождения</label>
+                                <div class="input__inner settings__tab-birhday">
+                                    <input class="input small__text" id="date_of_birth" type="date">
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="inputLocation">Местоположение</label>
+                                <div class="input__inner settings__tab-location">
+                                    <input class="input small__text" id="inputLocation" type="text" value="Санкт-Петербург">
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                    <div class="search__options">
+                                        <ul class="search__options-list">
+                                            <li>
+                                                <a class="text" href="#">
+                                                    Саратов
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="text" href="#">
+                                                    Москва
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="text" href="#">
+                                                    Красноярск
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__tab-email settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="inputEmailId">E-mail</label>
+                                <div class="input__inner">
+                                    <input class="input access__denied-inactive small__text" id="inputEmailId" type="email" value="dmchdmka@gmail.com">
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                    <span class="settings__notification access__denied small__text" id="successEmail">
+                                        Имя может содержать только буквы
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="settings__tab-phone settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="inputPhoneId">Мобильный телефон</label>
+                                <div class="input__inner">
+                                    <input class="input small__text" id="inputPhoneId" type="email" value="dmchdmka@gmail.com">
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__tab-pswd settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="inputPasswordId">Пароль</label>
+                                <div class="input__inner">
+                                    <input class="input small__text" id="inputPasswordId" type="password" value="testtest">
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__tab-login settings__tab_row flex justify-content">
+                                <label class="settings__label text" for="inputAddressId">Адрес аккаунта</label>
+                                <div class="input__inner">
+                                    <input class="input small__text" id="inputAddressId" type="text" value="dmchdmka">
+                                    <p class="settings__description-text small__text">
+                                        Сейчас другие пользователи могут найти вас по адресу:
+                                        <span>
+                                            <b>
+                                                meetins.ru/dmchdmka
+                                            </b>
+                                        </span>
+                                    </p>
+                                    <div class="warning flex">
+                                        <button class="warning__btn success__check" type="button">
+                                            <img src="./img/settings/success.svg" alt="успешно">
+                                        </button>
+                                        <button class="warning__btn error__check" type="button">
+                                            <img src="./img/settings/error.svg" alt="ошибка">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings__delete_account">
+                            <h2 class="settings__delete_account__title subtitle">
+                                Отключение
+                            </h2>
+                            <div class="settings__delete_account__main">
+                                <p class="settings__delete_account__descr small__text">
+                                    Вы можете удалить свой аккаунт прямо сейчас. Вместе с этим удаляться все ваши данные, ранее 
+                                    введенные в Meetins.
+                                </p>
+                                <p class="settings__delete_account__descr small__text">
+                                    Если Вы не хотите, чтобы ваша анкета показывалась среди других, воспользуйтесь
+                                    функцией отключения анкеты. Другие пользователи не смогут
+                                    увидеть ваш профиль. В любой момент можно восстановить доступ.
+                                </p>
+                                <div class="settings__delete_account__btns flex">
+                                    <button class="settings__delete-bottom__btn settings__delete_account__disable small__text">
+                                        Отключить аккаунт
+                                    </button>
+                                    <button class="settings__delete-bottom__btn settings__delete_account__remove small__text">
+                                        Удалить аккаунт
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+.header{
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-top: 26px;
+    padding-bottom: 29px;
+    background: $white;
+    box-shadow: 0px 1px 4px rgba(27, 80, 115, 0.13);
+    &__nav{
+        align-items: flex-end !important;
+    }
+    &__notice{
+        padding: 0;
+        border: none;
+        outline: none;
+        display: block;
+        cursor: pointer;
+        background: none;
+    }
+    &__profile{
+        margin-left: 25px;
+    }
+}
+.logo{
+    display: inline-block;
+    max-width: 135px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        object-fit: contain;
+    }
+}
+.nav{
+    margin-left: 65px;
+    &__item{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        display: inline-block;
+        color: $black;
+    }
+    &-active{
+        font-weight: 700 !important;
+    }
+}
+.invite__btn{
+    padding: 4px 15px;
+    border: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+    background: $white;
+    text-align: center;
+    border-radius: 28px;
+    border: 1px solid $gray_3;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    &:hover{
+        background: #fbfbfb;
+    }
+}
+.notice__profile{
+    margin-left: 60px;
+}
+.notice-icon{
+    position: relative;
+}
+.amount{
+    position: absolute;
+    top: -4px;
+    right: -9px;
+    z-index: 5;
+    width: 20px;
+    height: 20px;
+    color: $white;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    background: $red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile__img{
+    margin-right: 15px;
+    display: block;
+    max-width: 40px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.name__profile{
+    margin-right: 6px;
+    font-weight: 400 !important;
+}
+.free-access{
+    display: block;
+    color: $gray_0;
+}
